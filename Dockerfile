@@ -1,6 +1,6 @@
 ## Estágio de compilação
 ## Uma imagem de linux para compilar o projeto
-FROM ubunto:latest AS build
+FROM ubuntu:latest AS build
 
 ## Instalar o JAVA 21
 RUN apt-get update
