@@ -23,7 +23,7 @@ FROM eclipse-temurin:21-jdk-jammy
 EXPOSE 8080
 
 ## Copiar o arquivo JAR da compilação para o container de execução
-COPY --from=build /target/gamestore-0.0.1-SNAPSHOT.JAR app.jar
+COPY --from=build /target/gamestore-0.0.1-SNAPSHOT.jar app.jar
 
 ## Definir o comando de inicialização do container
 ENTRYPOINT ["java", "-jar", "app.jar"]
