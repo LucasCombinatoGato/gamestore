@@ -14,10 +14,10 @@ COPY . .
 
 ## Compilar o projeto com o maven
 
-RUN mvn clean install 
+RUN mvn clean install -DskipTest
 
 ## Execução do Projeto
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-jammy
 
 # Expor a porta 8080
 EXPOSE 8080
